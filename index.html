@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125620343-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-125620343-1');
+        </script>
+
+        <!-- meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Maicon Silva web site" />
+        <meta name="author" content="Maicon Silva" />
+        <meta
+            name="keywords"
+            content="web, desenvolvedor, desenvolvedor front end, front-end, programador web, maicon silva, maicon silva github, maiconrs95, web curriculum"
+        />
+
+        <!-- css - external -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+
+        <!-- css - project  -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/typography.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/hamburger-button.css" />
+        <link rel="stylesheet" href="./css/banner.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+
+        <title>Maicon Silva</title>
+    </head>
+    <body>
+        <nav>
+            <div class="menu-wrapper">
+                <div class="hamburger-menu"></div>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/maicon-silva-71687a86/" target="blank"
+                            ><i class="fab fa-linkedin-in"></i> Linkedin</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            title="+55 (11) 5070-8517"
+                            href="https://api.whatsapp.com/send?phone=5511950708517"
+                            target="blank"
+                            ><i class="fab fa-whatsapp"></i>
+                            Whatsapp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- principal - banner -->
+        <section id="banner">
+            <div class="about">
+                <h1 data-aos="fade-down">
+                    <hr />
+                    Maicon Silva
+                    <hr />
+                </h1>
+                <span class="professioanl-infos">
+                    <h4 data-aos="fade-up" data-aos-duration="500">
+                        Web developer
+                    </h4>
+                </span>
+                <div class="social-icons" data-aos="fade-up" data-aos-duration="900">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/maiconrs95" target="blank"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/maicon-silva-71687a86/"
+                                target="blank"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/maiconwte/" target="blank"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.facebook.com/people/Maicon-Silva/100009279701506"
+                                target="blank"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://codesandbox.io/u/maiconrs95" target="blank"
+                                ><i class="fab fa-codepen" aria-hidden="true"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/maiconwte" target="blank"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="background-image" data-aos="fade"></div>
+            <div class="background-filter"></div>
+        </section>
+
+        <!-- footer-->
+        <footer>
+            <small>
+                <a
+                    title="+55 (11) 5070-8517"
+                    href="https://api.whatsapp.com/send?phone=5511950708517"
+                    target="blank"
+                    ><i class="fab fa-whatsapp"></i>
+                    <text>
+                        11 9 5070-8517
+                    </text>
+                </a>
+                <a href="mailto:maiconrs95@gmail.com?Subject=Olá" target="_top"
+                    ><i class="far fa-envelope"></i>
+                    <text>
+                        maiconrs95@gmail.com
+                    </text>
+                </a>
+            </small>
+            <small>
+                <text>
+                    &copy; 2019 Developed by
+                    <a
+                        title="LINKEDIN"
+                        href="https://www.linkedin.com/in/maicon-silva-71687a86/"
+                        target="blank"
+                        >Maicon</a
+                    >
+                </text>
+            </small>
+        </footer>
+
+        <!-- scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            const navItem = document.querySelector('.nav-items');
+            const menuButton = document.querySelector('.menu-wrapper');
+            const toggleAnimate = document.querySelector('.hamburger-menu');
+
+            menuButton.onclick = () => {
+                navItem.classList.toggle('nav-active');
+                toggleAnimate.classList.toggle('animate');
+            };
+        </script>
+    </body>
+</html>
